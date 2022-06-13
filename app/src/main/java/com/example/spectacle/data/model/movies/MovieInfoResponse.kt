@@ -1,10 +1,13 @@
 package com.example.spectacle.data.model.movies
 
+import com.example.spectacle.domain.Category
 import com.google.gson.annotations.SerializedName
 
 class MovieInfoResponse(
     @SerializedName("backdrop_path")
     val backdrop_path: String? = null,
+    @SerializedName("genres")
+    val categories: List<Category>,
     @SerializedName("id")
     val id: Int,
     @SerializedName("overview")

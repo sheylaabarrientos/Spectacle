@@ -1,7 +1,7 @@
 package com.example.spectacle.data.remotesource
 
-
 import android.net.Uri
+import com.example.spectacle.data.model.categories.ResponseCategories
 import com.example.spectacle.data.model.movies.MovieInfoResponse
 import com.example.spectacle.data.model.movies.ResponseMovies
 import io.reactivex.Single
@@ -18,6 +18,9 @@ interface MoviesRemoteSource {
 
     @GET("search/movie")
     fun searchForMovie(@Query("query") movieSearched: Uri): Single<ResponseMovies>
+
+    @GET("genre/movie/list")
+    fun getAllGenres(): Single<ResponseCategories>
 
     @GET("discover/movie")
     fun getMoviesByCategory(@Query("with_genres", encoded = true) categoriesId: String): Single<ResponseMovies>
