@@ -6,7 +6,7 @@
 :paperclip: Cadastro e Login com Email e Senha autenticados no Firebase;<br>
 :paperclip: Tem a opção de logar pelo facebook;<br>
 :paperclip: A aplicação armazena os filmes favoritos;<br>
-:musical_note: A aplicação armazena as musicas favoritas;<br>
+:paperclip: A aplicação armazena as musicas favoritas;<br>
 :paperclip: O projeto esta modularizado, seguindo os padrões de arquitetura Clean e MVVM;<br>
 :paperclip: Uso do Crashlytics para mapear eventuais falhas de uso;<br>
 
