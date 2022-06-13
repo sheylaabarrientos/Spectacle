@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "836777659943",
+    "project_id": "spectable-9ad22",
+    "storage_bucket": "spectable-9ad22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836777659943:android:44fdb202b140b2c82f8802",
+        "android_client_info": {
+          "package_name": "com.example.spectacle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836777659943-u95ah1qt8pqflr61h3eivc8iicb2tpsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt_OVGMpd2RKvF7399pyXNF-uLPvIT44I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836777659943-u95ah1qt8pqflr61h3eivc8iicb2tpsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

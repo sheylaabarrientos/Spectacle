@@ -73,7 +73,6 @@ object MovieLocalDataSourceImpl : MovieLocalDataSource {
         }
     }
 
-
     override fun addToFavoriteMovie(movie: MovieResponse): Single<List<MovieResponse>> {
         return Single.create { emitter ->
             val result = favoriteMoviesList.add(movie)

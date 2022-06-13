@@ -3,13 +3,13 @@ package com.example.spectacle.data.repository
 import android.net.Uri
 import com.example.spectacle.data.base.Network
 import com.example.spectacle.data.localsource.MovieLocalDataSourceImpl
+import com.example.spectacle.data.mappers.CategoryMapper
+import com.example.spectacle.data.mappers.MovieMapper
+import com.example.spectacle.data.mappers.UserMapper
 import com.example.spectacle.data.remotesource.MoviesRemoteSource
 import com.example.spectacle.domain.AccountStates
 import com.example.spectacle.domain.Category
 import com.example.spectacle.domain.Movie
-import com.example.spectacle.data.mappers.CategoryMapper
-import com.example.spectacle.data.mappers.MovieMapper
-import com.example.spectacle.data.mappers.UserMapper
 import io.reactivex.Single
 
 class MoviesRepositoryImpl : MoviesRepository {
@@ -35,7 +35,6 @@ class MoviesRepositoryImpl : MoviesRepository {
                         }
                         userResponseList.profileResults
                     }
-
             }
             .map {
                 userMapper.map(it)

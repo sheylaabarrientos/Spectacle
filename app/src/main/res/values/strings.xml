@@ -10,4 +10,6 @@
     <string name="my_movie_list">Meus Filmes</string>
     <string name="search_music">Procurar na Playlist...</string>
     <string name="search_movie">Procurar em Meus Filmes...</string>
+    <string name="facebook_app_id">1040983213384718</string>
+    <string name="fb_login_protocol_scheme">fb1040983213384718</string>
 </resources>
