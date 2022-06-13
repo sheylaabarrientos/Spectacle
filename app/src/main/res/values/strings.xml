@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Spectacle</string>
+    <string name="what_do_you_want_to_do">O que deseja fazer?</string>
+    <string name="title_category_music">Música</string>
+    <string name="title_category_movie">Filmes</string>
+    <string name="subtitle_category_music">Veja suas músicas diponíveis</string>
+    <string name="subtitle_category_movie">Veja seus filmes diponíveis</string>
+    <string name="my_playlist">Minha Playlist</string>
+    <string name="add_new_song">Adicionar nova música</string>
+    <string name="my_movie_list">Meus Filmes</string>
+    <string name="search_music">Procurar na Playlist...</string>
+    <string name="search_movie">Procurar em Meus Filmes...</string>
 </resources>
