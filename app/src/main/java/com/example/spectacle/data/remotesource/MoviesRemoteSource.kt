@@ -4,6 +4,7 @@ import android.net.Uri
 import com.example.spectacle.data.model.categories.ResponseCategories
 import com.example.spectacle.data.model.movies.MovieInfoResponse
 import com.example.spectacle.data.model.movies.ResponseMovies
+import com.example.spectacle.data.model.user.ResponseUser
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -24,4 +25,7 @@ interface MoviesRemoteSource {
 
     @GET("discover/movie")
     fun getMoviesByCategory(@Query("with_genres", encoded = true) categoriesId: String): Single<ResponseMovies>
+
+    @GET("movie/{movie_id}/account_states")
+    fun getRateWatchlist(): Single<ResponseUser>
 }

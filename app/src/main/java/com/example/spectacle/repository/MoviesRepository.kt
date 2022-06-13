@@ -10,4 +10,5 @@ interface MoviesRepository {
     fun getAllGenres(): Single<List<Category>>
     fun getMoviesByCategory(categoryId: String): Single<List<Movie>>
     fun searchForMovie(movieSearched: Uri): Single<List<Movie>>
+//    fun getRateWatchlist(): Single<List<AccountStates>>
 }
