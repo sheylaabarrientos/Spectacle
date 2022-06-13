@@ -1,4 +1,4 @@
-package com.example.spectacle.data
+package com.example.spectacle.data.base
 
 import com.example.spectacle.data.remotesource.MoviesRemoteSource
 import okhttp3.OkHttpClient

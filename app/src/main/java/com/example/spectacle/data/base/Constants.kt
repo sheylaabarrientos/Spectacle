@@ -1,4 +1,4 @@
-package com.example.spectacle.data
+package com.example.spectacle.data.base
 
 enum class Constants(val value: String) {
     PRIVATE_KEY("9785973f3bb15c2a21794223b39bfcb8"),
