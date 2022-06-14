@@ -16,15 +16,12 @@ import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var backToHomeBtn: TextView
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        backToHomeBtn = findViewById(R.id.backToHomeBtn)
 
         goToMovies()
         logout()

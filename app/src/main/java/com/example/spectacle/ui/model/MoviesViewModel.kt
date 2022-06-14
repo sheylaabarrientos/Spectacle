@@ -90,7 +90,7 @@ class MoviesViewModel() : ViewModel() {
                 }
             ).handleDisposable()
     }
-//
+
 //    fun getWatchedMovies() {
 //        watchedMovieUseCase.getWatchedMovies()
 //            .subscribeOn(Schedulers.io())
@@ -104,21 +104,21 @@ class MoviesViewModel() : ViewModel() {
 //                }
 //            ).handleDisposable()
 //    }
-//
-//    fun getFavoriteMovies() {
-//        favoriteMoviesUseCase.getFavoriteMovies()
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe(
-//                {
-//                    _favoriteMoviesLiveData.value = it
-//                },
-//                {
-//                    print(it.message)
-//                }
-//            ).handleDisposable()
-//    }
-//
+
+    fun getFavoriteMovies() {
+        favoriteMoviesUseCase.getFavoriteMovies()
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(
+                {
+                    _favoriteMoviesLiveData.value = it
+                },
+                {
+                    print(it.message)
+                }
+            ).handleDisposable()
+    }
+
 //    fun addToWatchedList(movie: Movie) {
 //        watchedMovieUseCase.addToWatchedMovie(movie)
 //            .subscribeOn(Schedulers.io())

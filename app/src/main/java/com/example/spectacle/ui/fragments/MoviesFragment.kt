@@ -108,10 +108,6 @@ class MoviesFragment : Fragment(), MovieListener {
         }
     }
 
-    override fun openMovieDetails(movieId: Int) {
-        TODO("Not yet implemented")
-    }
-
 //    override fun openMovieDetails(movieId: Int) {
 //        val intent = Intent(requireContext(), InfoMovieActivity::class.java)
 //        intent.putExtra(MOVIE_ID, movieId)

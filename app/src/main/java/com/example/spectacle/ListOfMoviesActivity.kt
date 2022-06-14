@@ -41,14 +41,15 @@ class ListOfMoviesActivity : AppCompatActivity() {
 
         bindViews()
         logout()
+        goToHome()
 
         supportActionBar!!.hide()
     }
 
     private fun getTabTitle(position: Int): String {
         return when (position) {
-            ALL_MOVIES_POSITION -> "Meus Filmes"
-            FAVORITE_MOVIES_POSITION -> "Filmes"
+            FAVORITE_MOVIES_POSITION -> "Meus Filmes"
+            ALL_MOVIES_POSITION -> "Filmes"
             else -> ""
         }
     }
@@ -128,6 +129,14 @@ class ListOfMoviesActivity : AppCompatActivity() {
         backToHomeBtn.setOnClickListener {
             visibilityNotSearchMode()
             searchEdtTxt?.text?.clear()
+        }
+    }
+
+    private fun goToHome() {
+        binding.backHome.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 

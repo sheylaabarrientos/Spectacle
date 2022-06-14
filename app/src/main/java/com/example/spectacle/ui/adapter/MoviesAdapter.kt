@@ -24,7 +24,6 @@ class MoviesAdapter(
         var imageMovie: ImageView? = view.findViewById(R.id.imageView5)
         var movieTitle: TextView? = view.findViewById(R.id.title_movie)
         var addBtn: ToggleButton? = view.findViewById(R.id.add_watchlist)
-        var addWatched: ToggleButton? = view.findViewById(R.id.add_watchedlist)
         var movieId: TextView? = view.findViewById(R.id.movie_id)
     }
 
@@ -41,19 +40,9 @@ class MoviesAdapter(
         }
         holder.movieTitle?.text = dataSet[position].title
 
-
-        holder.imageMovie?.setOnClickListener {
-            listener?.openMovieDetails(dataSet[position].id)
-        }
-
         holder.addBtn?.isChecked = dataSet[position].inWatchList
         holder.addBtn?.setOnClickListener {
             listener?.onWatchListClickedListener(dataSet[position], !dataSet[position].inWatchList)
-        }
-
-        holder.addWatched?.isChecked = dataSet[position].watchedMovie
-        holder.addWatched?.setOnClickListener {
-            listener?.onWatchedListClickedListener(dataSet[position], !dataSet[position].watchedMovie)
         }
 
         holder.movieId?.text = dataSet[position].id.toString()

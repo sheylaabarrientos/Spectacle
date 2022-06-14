@@ -9,7 +9,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvImage"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_24"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_24"
-        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_16"
         android:ellipsize="end"
         android:maxEms="8"
         android:maxLines="2"
@@ -69,10 +69,9 @@
 
     <ToggleButton
         android:id="@+id/add_watchlist"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginTop="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_32"
         android:background="@drawable/add_watch_list"
         android:checked="false"
         android:elevation="10sp"
@@ -80,19 +79,6 @@
         android:textOff=""
         android:textOn=""
         app:layout_constraintEnd_toEndOf="@+id/cvImage"
-        app:layout_constraintTop_toBottomOf="@+id/title_movie" />
-
-    <ToggleButton
-        android:id="@+id/add_watchedlist"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="@dimen/margin_32"
-        android:layout_marginTop="@dimen/margin_16"
-        android:background="@drawable/heart_button"
-        android:checked="false"
-        android:text=""
-        android:textOff=""
-        android:textOn=""
         app:layout_constraintStart_toStartOf="@+id/cvImage"
         app:layout_constraintTop_toBottomOf="@+id/title_movie" />
 
