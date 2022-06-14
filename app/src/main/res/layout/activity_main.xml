@@ -16,22 +16,22 @@
         android:background="@color/blue"
         android:src="@drawable/ic_baseline_logout_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/backToHomeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_16"
         android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
         android:fontFamily="@font/gilroy_regular"
         android:text="@string/voltar_ao_inicio"
         android:textColor="@color/white"
         android:textSize="@dimen/tinyText_16"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/app_name"
@@ -46,5 +46,137 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log_out" />
 
+    <TextView
+        android:id="@+id/title_home"
+        style="@style/Title_Main_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_spectacle"
+        android:text="@string/what_do_you_want_to_do"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_playlist"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_home">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_music"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_16"
+                android:src="@drawable/ic_baseline_video_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_category_music"
+                style="@style/Category_Movie_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_spectacle"
+                android:text="@string/title_category_music"
+                app:layout_constraintStart_toEndOf="@+id/image_music"
+                app:layout_constraintTop_toTopOf="@+id/image_music" />
+
+            <TextView
+                style="@style/Subtitle_Artist_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_spectacle"
+                android:text="@string/subtitle_category_music"
+                app:layout_constraintStart_toEndOf="@+id/image_music"
+                app:layout_constraintTop_toBottomOf="@+id/title_category_music" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_movies"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_playlist">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_movie"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_16"
+                android:src="@drawable/ic_baseline_music_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_category_movie"
+                style="@style/Category_Movie_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_spectacle"
+                android:text="@string/title_category_movie"
+                app:layout_constraintStart_toEndOf="@+id/image_movie"
+                app:layout_constraintTop_toTopOf="@+id/image_movie" />
+
+            <TextView
+                style="@style/Subtitle_Artist_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_spectacle"
+                android:text="@string/subtitle_category_movie"
+                app:layout_constraintStart_toEndOf="@+id/image_movie"
+                app:layout_constraintTop_toBottomOf="@+id/title_category_movie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@color/white"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="@dimen/margin_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/backHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_16"
+            android:src="@drawable/ic_baseline_home_24"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
