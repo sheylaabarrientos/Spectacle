@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical"
     tools:context=".ui.login.FormSubscribe">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_subscribe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp" />
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/Title_Main_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/margin_24"
+        android:letterSpacing="0.07"
+        android:src="@drawable/ic_spectacle"
+        android:text="@string/app_name"
+        android:textAllCaps="true" />
 
 
     <TextView
+        style="@style/Title_Main_Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:text="Informe seu email e senha \npara iniciar a assinatura"
-        android:textAllCaps="false"
-        android:textColor="@color/blue"
-        android:textSize="26sp"
-        android:textStyle="bold" />
+        android:text="@string/title_subscribe"
+        android:textAllCaps="false" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:text="Crie sua conta."
+        android:text="@string/create_account"
         android:textAllCaps="false"
-        android:textColor="@color/purple"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -42,7 +47,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/edit_text_subscribe"
-        android:hint="Nome"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:maxLines="1"
         android:padding="20dp"
@@ -50,29 +56,24 @@
         android:textColorHint="@color/blue"
         android:textSize="18sp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_subscribe"
         android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="@dimen/margin_24"
+        android:background="@drawable/edit_text_subscribe"
         tools:context=".DatePickerActivity">
 
         <EditText
             android:id="@+id/billDate_editText_billUpload"
             android:layout_width="0dp"
             android:layout_height="43dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_margin="8dp"
             android:backgroundTint="@color/white"
             android:ems="10"
             android:focusable="false"
+            android:importantForAutofill="no"
             android:inputType="none"
             android:text=""
             android:textColor="@color/blue"
@@ -80,7 +81,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextFields" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -92,13 +94,14 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/edit_text_subscribe"
-        android:hint="Email"
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/blue"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:autofillHints="emailAddress" />
 
     <EditText
         android:id="@+id/edit_password"
@@ -108,7 +111,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/edit_text_subscribe"
-        android:hint="Senha"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="numberPassword"
         android:maxLines="1"
         android:padding="20dp"
@@ -118,14 +122,15 @@
 
     <Button
         android:id="@+id/btn_subscribe"
+        style="@style/Button_Login_Subscribe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:backgroundTint="@color/purple_700"
         android:padding="15dp"
-        android:text="CADASTRAR"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:text="@string/subscribe"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/message_error_subscribe"

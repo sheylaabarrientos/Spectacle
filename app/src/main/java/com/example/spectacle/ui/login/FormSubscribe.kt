@@ -29,7 +29,7 @@ class FormSubscribe : AppCompatActivity() {
         billDateEditText = findViewById(R.id.billDate_editText_billUpload)
 
         supportActionBar!!.hide()
-        toolbar()
+
         showDatePicker()
 
         binding.btnSubscribe.setOnClickListener {
@@ -108,12 +108,5 @@ class FormSubscribe : AppCompatActivity() {
                     else -> messageError.setText("Erro ao cadastrar usuário")
                 }
             }
-    }
-
-    private fun toolbar() {
-        val toolbar = binding.toolbarSubscribe
-        toolbar.setBackgroundColor(getColor(R.color.white))
-        toolbar.setSubtitleTextColor(getColor(R.color.purple_700))
-        toolbar.navigationIcon = getDrawable(R.drawable.ic_spectacle)
     }
 }
