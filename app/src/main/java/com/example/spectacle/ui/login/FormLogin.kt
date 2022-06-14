@@ -1,11 +1,12 @@
 package com.example.spectacle.ui.login
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.spectacle.MainActivity
+import com.example.spectacle.HomeActivity
 import com.example.spectacle.databinding.ActivityFormLoginBinding
 import com.facebook.AccessToken
 import com.facebook.CallbackManager
@@ -22,11 +23,14 @@ class FormLogin : AppCompatActivity() {
 
     private lateinit var binding: ActivityFormLoginBinding
     private var callbackManager: CallbackManager? = null
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFormLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         AccessToken.expireCurrentAccessToken()
 
@@ -53,6 +57,22 @@ class FormLogin : AppCompatActivity() {
                 userAuthentication()
             }
         }
+
+        binding.forgotPassword.setOnClickListener {
+            val emailAddress = binding.editEmail.text.toString()
+            val message_error = binding.messageErro
+
+            if (emailAddress.isEmpty()) {
+                message_error.setText("Insira seu e-mail!")
+            } else {
+                firebaseAuth.sendPasswordResetEmail(emailAddress)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(this, "Email enviado com Sucesso!", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            }
+        }
     }
 
     private fun configureButtonLoginFacebook() {
@@ -65,7 +85,7 @@ class FormLogin : AppCompatActivity() {
             object :
                 FacebookCallback<LoginResult> {
                 override fun onSuccess(result: LoginResult?) {
-                    goToAddProfile()
+                    goToHome()
                 }
 
                 override fun onCancel() {
@@ -99,7 +119,7 @@ class FormLogin : AppCompatActivity() {
             .addOnCompleteListener {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Login efetuado com Sucesso!", Toast.LENGTH_SHORT).show()
-                    goToAddProfile()
+                    goToHome()
                 }
             }.addOnFailureListener {
                 val erro = it
@@ -118,7 +138,7 @@ class FormLogin : AppCompatActivity() {
         val userConnected = FirebaseAuth.getInstance().currentUser
 
         if (userConnected != null) {
-            goToAddProfile()
+            goToHome()
         }
     }
 
@@ -128,8 +148,8 @@ class FormLogin : AppCompatActivity() {
         finish()
     }
 
-    private fun goToAddProfile() {
-        val intent = Intent(this, MainActivity::class.java)
+    private fun goToHome() {
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }

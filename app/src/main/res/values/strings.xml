@@ -12,4 +12,6 @@
     <string name="search_movie">Procurar em Meus Filmes...</string>
     <string name="facebook_app_id">1040983213384718</string>
     <string name="fb_login_protocol_scheme">fb1040983213384718</string>
+    <string name="voltar_ao_inicio">Voltar ao início</string>
+    <string name="forgot_password">Esqueci minha senha</string>
 </resources>

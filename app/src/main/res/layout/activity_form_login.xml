@@ -11,7 +11,8 @@
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginStart="40dp"
         android:navigationIcon="@drawable/ic_spectacle" />
 
     <EditText
@@ -97,11 +98,12 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Precisa de ajuda?"
+        android:text="@string/forgot_password"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
