@@ -22,4 +22,17 @@
     <string name="create_account">Crie sua conta</string>
     <string name="subscribe">CADASTRAR</string>
     <string name="name">Nome</string>
+    <string name="page_indicator">Page Indicator</string>
+    <string name="find">Buscar</string>
+    <string name="search_button_description">search_button_description</string>
+    <string name="not_found_movie">Esse filme não existe</string>
+    <string name="message_not_found_search_again">Não conseguimos encontrar o filme que você procura. Por favor, refaça sua busca.</string>
+    <string name="system_fail">O sistema falhou</string>
+    <string name="system_fail_try_again">Por algum motivo, não foi possível processar com essa \n solicitação. Por favor, tente novamente.</string>
+    <string name="tente_novamente">Tente novamente</string>
+    <string name="genre">Genre</string>
+    <string name="cover_movie">cover_movie</string>
+    <string name="star_icon">star icon</string>
+    <string name="_81_percent">%</string>
+    <string name="logout">deslogar</string>
 </resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:ignore="ScrollViewCount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        tools:context=".ui.ListOfMoviesActivity">
+
+        <ImageButton
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="@color/blue"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/logout" />
+
+        <ImageButton
+            android:id="@+id/submitSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_24"
+            android:backgroundTint="@color/blue"
+            android:contentDescription="@string/search_button_description"
+            android:src="@drawable/ic_baseline_search_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/searchMovie"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/margin_8"-->
+<!--            android:backgroundTint="@color/purple_200"-->
+<!--            android:ems="15"-->
+<!--            android:fontFamily="@font/gilroy_regular"-->
+<!--            android:hint="@string/search_movie"-->
+<!--            android:imeOptions="actionSearch"-->
+<!--            android:inputType="text"-->
+<!--            android:privateImeOptions="@color/black"-->
+<!--            android:textColor="@color/purple_700"-->
+<!--            android:textColorHint="@color/purple"-->
+<!--            android:textSize="@dimen/tinyText_16"-->
+<!--            android:autofillHints="@string/pesquisar_por_filme"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/submitSearch"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/submitSearch"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/submitSearch" />-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLytOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitSearch"
+            app:tabIndicator="@drawable/tab_rectangle_3"
+            app:tabIndicatorColor="@color/purple_700"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextColor="@color/purple_700"
+            app:tabTextAppearance="@style/CustomTabTextLayout"
+            app:tabTextColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/greenIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:src="@drawable/tab_rectangle_3"
+            android:visibility="gone"
+            android:contentDescription="@string/page_indicator"
+            app:layout_constraintStart_toStartOf="@+id/submitSearch"
+            app:layout_constraintTop_toBottomOf="@+id/submitSearch" />
+
+        <TextView
+            android:id="@+id/searchModeTxt"
+            style="@style/Title_Main_Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/find"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/greenIcon"
+            app:layout_constraintTop_toBottomOf="@+id/greenIcon" />
+
+        <TextView
+            android:id="@+id/backToHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/voltar_ao_inicio"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/tinyText_16"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/searchModeTxt"
+            app:layout_constraintTop_toBottomOf="@+id/searchModeTxt" />
+
+        <FrameLayout
+            android:id="@+id/searchFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backToHomeBtn" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLytOptions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

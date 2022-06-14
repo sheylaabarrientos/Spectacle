@@ -26,12 +26,25 @@ class HomeActivity : AppCompatActivity() {
 
         backToHomeBtn = findViewById(R.id.backToHomeBtn)
 
+        goToMovies()
+        logout()
+
+        supportActionBar!!.hide()
+    }
+
+    private fun goToMovies() {
+        binding.myMovies.setOnClickListener {
+            val intent = Intent(this, ListOfMoviesActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
+    private fun logout() {
         binding.logOut.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             backScreenLogin()
         }
-
-        supportActionBar!!.hide()
     }
 
     private fun backScreenLogin() {
