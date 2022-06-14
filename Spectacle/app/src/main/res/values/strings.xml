@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Spectacle</string>
+    <string name="what_do_you_want_to_do">O que deseja fazer?</string>
+    <string name="title_category_music">Música</string>
+    <string name="title_category_movie">Filmes</string>
+    <string name="subtitle_category_music">Veja suas músicas diponíveis</string>
+    <string name="subtitle_category_movie">Veja seus filmes diponíveis</string>
+    <string name="my_playlist">Minha Playlist</string>
+    <string name="add_new_song">Adicionar nova música</string>
+    <string name="my_movie_list">Meus Filmes</string>
+    <string name="search_music">Procurar na Playlist...</string>
+    <string name="search_movie">Procurar em Meus Filmes...</string>
+    <string name="facebook_app_id">1040983213384718</string>
+    <string name="fb_login_protocol_scheme">fb1040983213384718</string>
+    <string name="voltar_ao_inicio">Voltar ao início</string>
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="new_user_subscribe_here">Novo por aqui? Inscreva-se agora.</string>
+    <string name="title_subscribe">Informe seu email e senha \npara iniciar a assinatura</string>
+    <string name="create_account">Crie sua conta</string>
+    <string name="subscribe">CADASTRAR</string>
+    <string name="name">Nome</string>
 </resources>
