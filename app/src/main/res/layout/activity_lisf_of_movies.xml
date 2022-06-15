@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/blue"
         tools:context=".ui.ListOfMoviesActivity">
 
@@ -37,12 +37,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <EditText
+            android:id="@+id/search_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:autofillHints="Pesquisar um filme"
+            android:hint="@string/search_movie"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:ems="14"
+            android:imeOptions="actionSearch"
+            android:privateImeOptions="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/log_out"
+            app:layout_constraintStart_toEndOf="@+id/submitSearch"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
 <!--        <EditText-->
 <!--            android:id="@+id/searchMovie"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:layout_marginStart="@dimen/margin_8"-->
-<!--            android:backgroundTint="@color/purple_200"-->
+<!--            android:backgroundTint="@color/purple"-->
 <!--            android:ems="15"-->
 <!--            android:fontFamily="@font/gilroy_regular"-->
 <!--            android:hint="@string/search_movie"-->
@@ -120,7 +139,8 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="700dp"
+            android:layout_height="600dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tabLytOptions" />
@@ -147,9 +167,9 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="Ir para a tela incial" />
+                android:contentDescription="@string/go_to_home" />
 
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</ScrollView>

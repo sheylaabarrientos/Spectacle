@@ -2,14 +2,19 @@ package com.example.spectacle
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import androidx.viewpager2.widget.ViewPager2
 import com.example.spectacle.databinding.ActivityLisfOfMoviesBinding
 import com.example.spectacle.ui.adapter.ViewPagerAdapter
 import com.example.spectacle.ui.adapter.ViewPagerAdapter.Companion.ALL_MOVIES_POSITION
 import com.example.spectacle.ui.adapter.ViewPagerAdapter.Companion.FAVORITE_MOVIES_POSITION
+import com.example.spectacle.ui.fragments.SearchMoviesFragment
 import com.example.spectacle.ui.login.FormLogin
 import com.facebook.AccessToken
 import com.facebook.GraphRequest
@@ -29,8 +34,8 @@ class ListOfMoviesActivity : AppCompatActivity() {
     private lateinit var tbLytOptions: TabLayout
     private lateinit var viewPager: ViewPager2
     private lateinit var fragmentContainer: FrameLayout
-//    private lateinit var movieSearched: String
-//    private var searchFragment: SearchMoviesFragment? = null
+    private lateinit var movieSearched: String
+    private var searchFragment: SearchMoviesFragment? = null
 
     private lateinit var binding: ActivityLisfOfMoviesBinding
 
@@ -53,15 +58,15 @@ class ListOfMoviesActivity : AppCompatActivity() {
             else -> ""
         }
     }
-//
-//    private fun visibilitySearchMode() {
-//        tbLytOptions.visibility = View.GONE
-//        viewPager.visibility = View.GONE
-//        greenIcon.visibility = View.VISIBLE
-//        searchModeTxt.visibility = View.VISIBLE
-//        backToHomeBtn.visibility = View.VISIBLE
-//        fragmentContainer.visibility = View.VISIBLE
-//    }
+
+    private fun visibilitySearchMode() {
+        tbLytOptions.visibility = View.GONE
+        viewPager.visibility = View.GONE
+        greenIcon.visibility = View.VISIBLE
+        searchModeTxt.visibility = View.VISIBLE
+        backToHomeBtn.visibility = View.VISIBLE
+        fragmentContainer.visibility = View.VISIBLE
+    }
 
     private fun visibilityNotSearchMode() {
         tbLytOptions.visibility = View.VISIBLE
@@ -73,7 +78,7 @@ class ListOfMoviesActivity : AppCompatActivity() {
     }
 
     private fun bindViews() {
-//        searchEdtTxt = findViewById(R.id.searchMovie)
+        searchEdtTxt = findViewById(R.id.search_movie)
         searchBtn = findViewById(R.id.submitSearch)
         tbLytOptions = findViewById(R.id.tabLytOptions)
         viewPager = findViewById(R.id.viewPager)
@@ -88,43 +93,43 @@ class ListOfMoviesActivity : AppCompatActivity() {
             tab.text = getTabTitle(position)
         }.attach()
 
-//        searchEdtTxt?.setOnEditorActionListener { _, actionId, _ ->
-//            when (actionId) {
-//                EditorInfo.IME_ACTION_SEARCH -> {
-//                    movieSearched = searchEdtTxt?.text.toString()
-//                    if (searchFragment == null) {
-//                        searchFragment = SearchMoviesFragment.newInstance(movieSearched)
-//                        searchFragment?.let {
-//                            supportFragmentManager.beginTransaction()
-//                                .replace(R.id.searchFragmentContainer, it)
-//                                // .addToBackStack(null)
-//                                .commit()
-//                        }
-//                    } else {
-//                        searchFragment?.updateQuery(movieSearched.toUri())
-//                    }
-//                    true
-//                }
-//                else -> false
-//            }
-//        }
-//
-//        searchEdtTxt?.addTextChangedListener(object : TextWatcher {
-//            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) { }
-//
-//            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-//                visibilitySearchMode()
-//            }
-//
-//            override fun afterTextChanged(s: Editable?) {
-//                if (s != null) {
-//                    if (s.isEmpty()) {
-//                        viewPager.setCurrentItem(ALL_MOVIES_POSITION, false)
-//                        visibilityNotSearchMode()
-//                    }
-//                }
-//            }
-//        })
+        searchEdtTxt?.setOnEditorActionListener { _, actionId, _ ->
+            when (actionId) {
+                EditorInfo.IME_ACTION_SEARCH -> {
+                    movieSearched = searchEdtTxt?.text.toString()
+                    if (searchFragment == null) {
+                        searchFragment = SearchMoviesFragment.newInstance(movieSearched)
+                        searchFragment?.let {
+                            supportFragmentManager.beginTransaction()
+                                .replace(R.id.searchFragmentContainer, it)
+                                 .addToBackStack(null)
+                                .commit()
+                        }
+                    } else {
+                        searchFragment?.updateQuery(movieSearched.toUri())
+                    }
+                    true
+                }
+                else -> false
+            }
+        }
+
+        searchEdtTxt?.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) { }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                visibilitySearchMode()
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                if (s != null) {
+                    if (s.isEmpty()) {
+                        viewPager.setCurrentItem(ALL_MOVIES_POSITION, false)
+                        visibilityNotSearchMode()
+                    }
+                }
+            }
+        })
 
         backToHomeBtn.setOnClickListener {
             visibilityNotSearchMode()
@@ -165,7 +170,7 @@ class ListOfMoviesActivity : AppCompatActivity() {
         }
     }
 
-//    companion object {
-//        const val LIST_ID = "LIST_ID"
-//    }
+    companion object {
+        const val LIST_ID = "LIST_ID"
+    }
 }
