@@ -55,27 +55,6 @@
             app:layout_constraintStart_toEndOf="@+id/submitSearch"
             app:layout_constraintTop_toTopOf="parent"/>
 
-
-<!--        <EditText-->
-<!--            android:id="@+id/searchMovie"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="@dimen/margin_8"-->
-<!--            android:backgroundTint="@color/purple"-->
-<!--            android:ems="15"-->
-<!--            android:fontFamily="@font/gilroy_regular"-->
-<!--            android:hint="@string/search_movie"-->
-<!--            android:imeOptions="actionSearch"-->
-<!--            android:inputType="text"-->
-<!--            android:privateImeOptions="@color/black"-->
-<!--            android:textColor="@color/purple_700"-->
-<!--            android:textColorHint="@color/purple"-->
-<!--            android:textSize="@dimen/tinyText_16"-->
-<!--            android:autofillHints="@string/pesquisar_por_filme"-->
-<!--            app:layout_constraintBottom_toBottomOf="@+id/submitSearch"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/submitSearch"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/submitSearch" />-->
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLytOptions"
             android:layout_width="match_parent"

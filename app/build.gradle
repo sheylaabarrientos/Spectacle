@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-android-extensions'
     id 'com.google.firebase.crashlytics'
 }
 
@@ -92,5 +91,4 @@ dependencies {
     //Facebook
     implementation 'com.facebook.android:facebook-login:11.1.0'
     implementation 'com.facebook.android:facebook-common:11.1.0'
-
 }

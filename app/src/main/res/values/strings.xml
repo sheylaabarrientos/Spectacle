@@ -33,4 +33,6 @@
     <string name="genre">Genre</string>
     <string name="logout">deslogar</string>
     <string name="go_to_home">Ir para a tela incial</string>
+    <string name="_81_percent">%</string>
+    <string name="cover_movie">cover_movie</string>
 </resources>
