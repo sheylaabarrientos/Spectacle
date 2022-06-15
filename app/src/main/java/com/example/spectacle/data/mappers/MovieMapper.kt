@@ -13,8 +13,7 @@ class MovieMapper {
                 title = it.title,
                 rating = it.rating,
                 categoryIds = it.genreIds,
-                inWatchList = it.isFavorite,
-                watchedMovie = it.watchedMovie,
+                inFavoriteList = it.isFavorite
             )
             movies.add(movie)
         }

@@ -6,6 +6,5 @@ data class Movie(
     val title: String? = null,
     val rating: Float,
     val categoryIds: List<Int>,
-    var inWatchList: Boolean = false,
-    var watchedMovie: Boolean = false
+    var inFavoriteList: Boolean = false
 )

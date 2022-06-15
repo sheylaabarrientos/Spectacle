@@ -129,25 +129,15 @@ class SearchMoviesFragment : Fragment(), MovieListener {
         }
     }
 
-    override fun onWatchListClickedListener(movie: Movie, isChecked: Boolean) {
+    override fun favoriteListClickedListener(movie: Movie, isChecked: Boolean) {
         if (isChecked) {
-            movie.inWatchList = true
+            movie.inFavoriteList = true
             moviesViewModel.addToFavoriteMovie(movie)
 //            MoviesViewModel.writeFavoriteMovie(movie)
         } else {
-            movie.inWatchList = false
+            movie.inFavoriteList = false
             moviesViewModel.removeFavoriteMovie(movie)
 //            MoviesViewModel.deleteFavoriteMovie(movie)
-        }
-    }
-
-    override fun onWatchedListClickedListener(movie: Movie, isChecked: Boolean) {
-        if (isChecked) {
-            movie.watchedMovie = true
-            moviesViewModel.addToFavoriteMovie(movie)
-        } else {
-            movie.watchedMovie = false
-            moviesViewModel.removeFavoriteMovie(movie)
         }
     }
 

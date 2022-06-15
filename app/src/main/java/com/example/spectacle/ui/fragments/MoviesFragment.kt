@@ -80,23 +80,23 @@ class MoviesFragment : Fragment(), MovieListener {
     }
 
     private fun observeListMovies() {
-        moviesViewModel.movieListLiveData.observe(viewLifecycleOwner, { response ->
+        moviesViewModel.movieListLiveData.observe(viewLifecycleOwner) { response ->
             response?.let {
                 listAdapter.dataSet.clear()
                 listAdapter.dataSet.addAll(it)
                 listAdapter.notifyDataSetChanged()
                 progressBar.visibility = View.GONE
             }
-        })
+        }
     }
 
     private fun observeGenres() {
-        moviesViewModel.categoryListLiveData.observe(viewLifecycleOwner, { response ->
+        moviesViewModel.categoryListLiveData.observe(viewLifecycleOwner) { response ->
             response?.let {
                 categoryAdapter.dataset.addAll(it)
                 categoryAdapter.notifyDataSetChanged()
             }
-        })
+        }
     }
 
     private fun observeViewState() {
@@ -108,38 +108,17 @@ class MoviesFragment : Fragment(), MovieListener {
         }
     }
 
-//    override fun openMovieDetails(movieId: Int) {
-//        val intent = Intent(requireContext(), InfoMovieActivity::class.java)
-//        intent.putExtra(MOVIE_ID, movieId)
-//        startActivity(intent)
-//    }
-
     override fun loadMoviesWithGenre(categoryIds: List<Int>) {
         moviesViewModel.getMoviesByCategory(categoryIds)
     }
 
-    override fun onWatchListClickedListener(movie: Movie, isChecked: Boolean) {
+    override fun favoriteListClickedListener(movie: Movie, isChecked: Boolean) {
         if (isChecked) {
-            movie.inWatchList = true
+            movie.inFavoriteList = true
             moviesViewModel.addToFavoriteMovie(movie)
-//            moviesViewModel.deleteWatchedMovie(movie)
-//            MoviesViewModel.writeFavoriteMovie(movie)
         } else {
-            movie.inWatchList = false
+            movie.inFavoriteList = false
             moviesViewModel.removeFavoriteMovie(movie)
-//            MoviesViewModel.deleteFavoriteMovie(movie)
-        }
-    }
-
-    override fun onWatchedListClickedListener(movie: Movie, isChecked: Boolean) {
-        if (isChecked) {
-            movie.watchedMovie = true
-            moviesViewModel.removeFavoriteMovie(movie)
-//            MoviesViewModel.writeFavoriteMovie(movie)
-        } else {
-            movie.watchedMovie = false
-//            moviesViewModel.deleteWatchedMovie(movie)
-//            MoviesViewModel.deleteFavoriteMovie(movie)
         }
     }
 }

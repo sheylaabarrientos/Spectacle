@@ -40,9 +40,9 @@ class MoviesAdapter(
         }
         holder.movieTitle?.text = dataSet[position].title
 
-        holder.addBtn?.isChecked = dataSet[position].inWatchList
+        holder.addBtn?.isChecked = dataSet[position].inFavoriteList
         holder.addBtn?.setOnClickListener {
-            listener?.onWatchListClickedListener(dataSet[position], !dataSet[position].inWatchList)
+            listener?.favoriteListClickedListener(dataSet[position], !dataSet[position].inFavoriteList)
         }
 
         holder.movieId?.text = dataSet[position].id.toString()
