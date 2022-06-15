@@ -82,6 +82,7 @@ class FavoriteMoviesFragment : Fragment(), MovieListener {
         if (!isChecked) {
             movie.inFavoriteList = false
             viewModelFavorites.removeFavoriteMovie(movie)
+            MoviesViewModel.deleteFavoriteMovie(movie)
         }
     }
 
@@ -101,13 +102,4 @@ class FavoriteMoviesFragment : Fragment(), MovieListener {
             }
         }
     }
-
-//    override fun onWatchedListClickedListener(movie: Movie, isChecked: Boolean) {
-//        if (isChecked) {
-//            movie.watchedMovie = true
-//            viewModelFavorites.removeFavoriteMovie(movie)
-//        } else {
-//            movie.watchedMovie = false
-//        }
-//    }
 }

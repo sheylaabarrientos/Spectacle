@@ -129,7 +129,7 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginBottom="@dimen/margin_16"
-            android:background="@color/blue"
+            android:backgroundTint="@color/white"
             app:cardCornerRadius="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintCircleRadius="@dimen/margin_40"
