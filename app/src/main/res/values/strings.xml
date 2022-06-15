@@ -31,9 +31,6 @@
     <string name="system_fail_try_again">Por algum motivo, não foi possível processar com essa \n solicitação. Por favor, tente novamente.</string>
     <string name="tente_novamente">Tente novamente</string>
     <string name="genre">Genre</string>
-    <string name="cover_movie">cover_movie</string>
-    <string name="star_icon">star icon</string>
-    <string name="_81_percent">%</string>
     <string name="logout">deslogar</string>
     <string name="go_to_home">Ir para a tela incial</string>
 </resources>

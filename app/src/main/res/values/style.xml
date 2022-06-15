@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -79,21 +78,4 @@
         <item name="chipBackgroundColor">@color/chip_background_color</item>
         <item name="android:textColor">@color/chip_text_color</item>
     </style>
-
-    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopRight">0dp</item>
-        <item name="cornerSizeTopLeft">45dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-        <item name="cornerSizeBottomLeft">45dp</item>
-        <item name="colorPrimaryDark">@color/white</item>
-    </style>
-
-    <style name="shapeableImageStyle" parent="">
-        <item name="cornerSizeBottomLeft">40dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeTopRight">0dp</item>
-    </style>
-
 </resources>
