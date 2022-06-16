@@ -16,6 +16,7 @@
 :paperclip: Cenário de erro para filmes não encontrados;<br>
 
 <p><h3>:clapper: :musical_note: Início </h3>
+
 Existem duas categorias: Músicas e Filmes<br>
 
 <img src="spectacle.png" width="800px"></img>
@@ -26,15 +27,15 @@ Baixe o APK em seu Celular Android
 
 <a href="https://github.com/sheylaabarrientos/Spectacle/blob/main/app/app-release.apk">DOWNLOAD APK</a>
 
-Passo 1: abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.
-Passo 2: em seguida, expanda a opção “Avançado”.
-Passo 3: toque em “Acesso especial a apps”.
-Passo 4: na aba seguinte, selecione “Instalar apps desconhecidos”.
-Passo 5: com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.
-Passo 6: habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.
-Passo 7: agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.
-Passo 8: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.
-Passo 9: aguarde até que o download seja concluído e toque em “Abrir”.
+Passo 1: abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.<br>
+Passo 2: em seguida, expanda a opção “Avançado”.<br>
+Passo 3: toque em “Acesso especial a apps”.<br>
+Passo 4: na aba seguinte, selecione “Instalar apps desconhecidos”.<br>
+Passo 5: com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.<br>
+Passo 6: habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.<br>
+Passo 7: agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.<br>
+Passo 8: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
+Passo 9: aguarde até que o download seja concluído e toque em “Abrir”.<br>
 
 <p><h3>:clapper: :musical_note: Pré requisitos App</h3>
 
@@ -43,6 +44,10 @@ Pegue sua chave TheMoviedb API KEY <a href="https://developers.themoviedb.org/3/
 Adicione sua Chave TMDB API key no arquivo <a href="https://github.com/sheylaabarrientos/Spectacle/blob/main/app/src/main/java/com/example/spectacle/data/base/Constants.kt">Constants.kt</a>
 
 tmdb_api_key = PRIVATE_KEY
+
+```bash
+PRIVATE_KEY="****"
+```
 
 <p><h3>:clapper: :musical_note: Patterns and Libraries </h3>
 
