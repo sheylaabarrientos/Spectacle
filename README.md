@@ -24,15 +24,15 @@ Baixe o APK em seu Celular Android
 
 <a href="https://github.com/sheylaabarrientos/Spectacle/blob/main/app/app-release.apk">DOWNLOAD APK</a>
 
-Passo 1: abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.<br>
-Passo 2: em seguida, expanda a opção “Avançado”.<br>
-Passo 3: toque em “Acesso especial a apps”.<br>
-Passo 4: na aba seguinte, selecione “Instalar apps desconhecidos”.<br>
-Passo 5: com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.<br>
-Passo 6: habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.<br>
-Passo 7: agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.<br>
-Passo 8: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
-Passo 9: aguarde até que o download seja concluído e toque em “Abrir”.<br>
+:one: abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.<br>
+:two: em seguida, expanda a opção “Avançado”.<br>
+:three: toque em “Acesso especial a apps”.<br>
+:four: na aba seguinte, selecione “Instalar apps desconhecidos”.<br>
+:five: com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.<br>
+:six: habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.<br>
+:seven: agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.<br>
+:eight: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
+:nine: aguarde até que o download seja concluído e toque em “Abrir”.<br>
 
 <p><h3>:dart: Pré requisitos App</h3>
 
@@ -46,26 +46,26 @@ PRIVATE_KEY = (tmdb_api_key)
 
 <p><h3>:dart: Patterns and Libraries </h3>
 
-Android Jetpack <br>
-MVVM<br>
-Firebase<br>
-Retrofit2<br>
-Coroutines<br>
-Single Activity Pattern<br>
-Material Design<br>
-Navigation<br>
-ViewModel<br>
+:heavy_check_mark: Android Jetpack <br>
+:heavy_check_mark: MVVM<br>
+:heavy_check_mark: Firebase<br>
+:heavy_check_mark: Retrofit2<br>
+:heavy_check_mark: Coroutines<br>
+:heavy_check_mark: Single Activity Pattern<br>
+:heavy_check_mark: Material Design<br>
+:heavy_check_mark: Navigation<br>
+:heavy_check_mark: ViewModel<br>
 
 <p><h3>:dart: Features </h3>
 
-Login<br>
-Subscribe<br>
-Reset Password<br>
-Logout<br>
-Movies<br>
-Favorite Movies<br>
-Search Movies<br>
-Local Data<br>
+:heavy_check_mark: Login<br>
+:heavy_check_mark: Subscribe<br>
+:heavy_check_mark: Reset Password<br>
+:heavy_check_mark: Logout<br>
+:heavy_check_mark: Movies<br>
+:heavy_check_mark: Favorite Movies<br>
+:heavy_check_mark: Search Movies<br>
+:heavy_check_mark: Local Data<br>
 
 <p><h3>:dart: Recursos </h3>
 
@@ -73,7 +73,7 @@ Local Data<br>
 :pushpin: <a href="https://www.themoviedb.org/documentation/api">TMDB API</a><br>
 :pushpin: <a href="https://firebase.google.com">FIREBASE</a><br>
 
-<p><h3> :womens: :space_invader: Autora </h3>
+<p><h3>:space_invader: Autora </h3>
 
 <a href="https://www.linkedin.com/in/sheylabarrientos/">Sheyla Barrientos</a>
 
