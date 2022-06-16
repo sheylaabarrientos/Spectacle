@@ -16,7 +16,7 @@
 :pushpin: Cenário de erro para filmes não encontrados;<br>
 
 
-<img src="spectacle.png" width="900px"></img>
+<img src="spectacle_.png" width="900px"></img>
 
 <p><h3>:dart: APK </h3>
 
