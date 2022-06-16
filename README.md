@@ -3,22 +3,22 @@
 <h3>:movie_camera: Aplicativo que simula um diário de filmes favoritos e músicas favoritas. :musical_note:</h3>
 
 
-:paperclip: Cadastro de usuário com Email e Senha autenticados no Firebase;<br>
-:paperclip: Login com Email e Senha autenticados no Firebase;<br>
-:paperclip: Recuperação de Senha pelo Firebase;<br>
-:paperclip: Opção de logar pelo facebook;<br>
-:paperclip: Opção de deslogar do aplicativo;<br>
-:paperclip: A aplicação armazena os filmes favoritos;<br>
-:paperclip: A aplicação armazena as musicas favoritas localmente;<br>
-:paperclip: O projeto esta modularizado, seguindo os padrões de arquitetura Clean e MVVM;<br>
-:paperclip: Uso do Crashlytics para mapear eventuais falhas de uso;<br>
-:paperclip: Busca de filmes pelo nome;<br>
-:paperclip: Cenário de erro para filmes não encontrados;<br>
+:pushpin: Cadastro de usuário com Email e Senha autenticados no Firebase;<br>
+:pushpin: Login com Email e Senha autenticados no Firebase;<br>
+:pushpin: Recuperação de Senha pelo Firebase;<br>
+:pushpin: Opção de logar pelo facebook;<br>
+:pushpin: Opção de deslogar do aplicativo;<br>
+:pushpin: A aplicação armazena os filmes favoritos;<br>
+:pushpin: A aplicação armazena as musicas favoritas localmente;<br>
+:pushpin: O projeto esta modularizado, seguindo os padrões de arquitetura Clean e MVVM;<br>
+:pushpin: Uso do Crashlytics para mapear eventuais falhas de uso;<br>
+:pushpin: Busca de filmes pelo nome;<br>
+:pushpin: Cenário de erro para filmes não encontrados;<br>
 
 
-<img src="spectacle.png" width="800px"></img>
+<img src="spectacle.png" width="900px"></img>
 
-<p><h3>:clapper: :musical_note: APK </h3>
+<p><h3>:dart: APK </h3>
 
 Baixe o APK em seu Celular Android
 
@@ -34,7 +34,7 @@ Passo 7: agora você poderá baixar um APK de algum site, como o APKMirror, por 
 Passo 8: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
 Passo 9: aguarde até que o download seja concluído e toque em “Abrir”.<br>
 
-<p><h3>:clapper: :musical_note: Pré requisitos App</h3>
+<p><h3>:dart: Pré requisitos App</h3>
 
 Pegue sua chave TheMoviedb API KEY <a href="https://developers.themoviedb.org/3/getting-started">AQUI</a>
 
@@ -44,7 +44,7 @@ Adicione sua Chave TMDB API key no arquivo <a href="https://github.com/sheylaaba
 PRIVATE_KEY = (tmdb_api_key)
 ```
 
-<p><h3>:clapper: :musical_note: Patterns and Libraries </h3>
+<p><h3>:dart: Patterns and Libraries </h3>
 
 Android Jetpack <br>
 MVVM<br>
@@ -56,7 +56,7 @@ Material Design<br>
 Navigation<br>
 ViewModel<br>
 
-<p><h3>:clapper: :musical_note: Features </h3>
+<p><h3>:dart: Features </h3>
 
 Login<br>
 Subscribe<br>
@@ -67,12 +67,11 @@ Favorite Movies<br>
 Search Movies<br>
 Local Data<br>
 
-<p><h3>:clapper: :musical_note: Recursos </h3>
+<p><h3>:dart: Recursos </h3>
 
-<a href="https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwhqaVBhCxARIsAHK1tiPdisiDGXwVmYPYlTc2h155A0EN4MXDAuz65zL1sbCoZ_1V5DXDgPwaArCQEALw_wcB&gclsrc=aw.ds">ANDROID STUDIO</a><br>
-<a href="https://www.themoviedb.org/documentation/api">TMDB API</a><br>
-<a href="https://firebase.google.com">FIREBASE</a><br>
-
+:pushpin: <a href="https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwhqaVBhCxARIsAHK1tiPdisiDGXwVmYPYlTc2h155A0EN4MXDAuz65zL1sbCoZ_1V5DXDgPwaArCQEALw_wcB&gclsrc=aw.ds">ANDROID STUDIO</a><br>
+:pushpin: <a href="https://www.themoviedb.org/documentation/api">TMDB API</a><br>
+:pushpin: <a href="https://firebase.google.com">FIREBASE</a><br>
 
 <p><h3> :womens: :space_invader: Autora </h3>
 
