@@ -1,6 +1,6 @@
 # Spectacle
 
-<h3>:movie_camera: Aplicativo que simula um diário de filmes favoritos e músicas favoritas. :musical_note:</h3>
+<h3>:movie_camera: Aplicativo que simula um diário de filmes e músicas favoritas :musical_note:</h3>
 
 
 :pushpin: Cadastro de usuário com Email e Senha autenticados no Firebase;<br>
@@ -16,7 +16,7 @@
 :pushpin: Cenário de erro para filmes não encontrados;<br>
 
 
-<img src="spectacle_.png" width="900px"></img>
+<img src="spectacle.png" width="900px"></img>
 
 <p><h3>:dart: APK </h3>
 
