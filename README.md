@@ -15,9 +15,6 @@
 :paperclip: Busca de filmes pelo nome;<br>
 :paperclip: Cenário de erro para filmes não encontrados;<br>
 
-<p><h3>:clapper: :musical_note: Início </h3>
-
-Existem duas categorias: Músicas e Filmes<br>
 
 <img src="spectacle.png" width="800px"></img>
 
@@ -43,41 +40,41 @@ Pegue sua chave TheMoviedb API KEY <a href="https://developers.themoviedb.org/3/
 
 Adicione sua Chave TMDB API key no arquivo <a href="https://github.com/sheylaabarrientos/Spectacle/blob/main/app/src/main/java/com/example/spectacle/data/base/Constants.kt">Constants.kt</a>
 
-tmdb_api_key = PRIVATE_KEY
-
 ```bash
-PRIVATE_KEY="****"
+PRIVATE_KEY = (tmdb_api_key)
 ```
 
 <p><h3>:clapper: :musical_note: Patterns and Libraries </h3>
 
-Android Jetpack 
-MVVM
-Firebase
-Retrofit2
-Coroutines
-Single Activity Pattern
-Material Design
-Navigation
-ViewModel
+Android Jetpack <br>
+MVVM<br>
+Firebase<br>
+Retrofit2<br>
+Coroutines<br>
+Single Activity Pattern<br>
+Material Design<br>
+Navigation<br>
+ViewModel<br>
 
 <p><h3>:clapper: :musical_note: Features </h3>
 
-Login
-Subscribe
-Reset Password
-Logout
-Movies
-Favorite Movies
-Search Movies
-Local Data
+Login<br>
+Subscribe<br>
+Reset Password<br>
+Logout<br>
+Movies<br>
+Favorite Movies<br>
+Search Movies<br>
+Local Data<br>
 
 <p><h3>:clapper: :musical_note: Recursos </h3>
 
-<a href="https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwhqaVBhCxARIsAHK1tiPdisiDGXwVmYPYlTc2h155A0EN4MXDAuz65zL1sbCoZ_1V5DXDgPwaArCQEALw_wcB&gclsrc=aw.ds">ANDROID STUDIO</a>
-<a href="https://www.themoviedb.org/documentation/api">TMDB API</a>
-<a href="https://firebase.google.com">FIREBASE</a>
+<a href="https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwhqaVBhCxARIsAHK1tiPdisiDGXwVmYPYlTc2h155A0EN4MXDAuz65zL1sbCoZ_1V5DXDgPwaArCQEALw_wcB&gclsrc=aw.ds">ANDROID STUDIO</a><br>
+<a href="https://www.themoviedb.org/documentation/api">TMDB API</a><br>
+<a href="https://firebase.google.com">FIREBASE</a><br>
 
+
+<p><h3> :womens: :space_invader: Autora </h3>
 
 <a href="https://www.linkedin.com/in/sheylabarrientos/">Sheyla Barrientos</a>
 
