@@ -24,15 +24,15 @@ Baixe o APK em seu Celular Android
 
 <a href="https://github.com/sheylaabarrientos/Spectacle/blob/main/app/app-release.apk">DOWNLOAD APK</a>
 
-:one: abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.<br>
-:two: em seguida, expanda a opção “Avançado”.<br>
-:three: toque em “Acesso especial a apps”.<br>
-:four: na aba seguinte, selecione “Instalar apps desconhecidos”.<br>
-:five: com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.<br>
-:six: habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.<br>
-:seven: agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.<br>
-:eight: uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
-:nine: aguarde até que o download seja concluído e toque em “Abrir”.<br>
+:one: - Abra as “Configurações” do seu celular e acesse a aba “Apps e notificações”.<br>
+:two: - Em seguida, expanda a opção “Avançado”.<br>
+:three: - Toque em “Acesso especial a apps”.<br>
+:four: - Na aba seguinte, selecione “Instalar apps desconhecidos”.<br>
+:five: - Com a lista de apps aberta, localize o “Google Chrome” ou outro navegador de sua preferência e abra-o.<br>
+:six: - Habilite a opção “Permitir desta fonte” e agora você poderá instalar um APK baixado no Google Chrome.<br>
+:seven: - Agora você poderá baixar um APK de algum site, como o APKMirror, por exemplo.<br>
+:eight: - Uma notificação será exibida informando de que o arquivo pode danificar o celular. Clique em “OK” para prosseguir.<br>
+:nine: - Aguarde até que o download seja concluído e toque em “Abrir”.<br>
 
 <p><h3>:dart: Pré requisitos App</h3>
 
